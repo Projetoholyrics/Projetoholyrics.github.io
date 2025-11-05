@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Banner com efeito de paralaxe usando a foto do canal -->
-    <header class="banner">
-        <div class="banner-content">
-            <img src="foto-canal-enviada.jpg" alt="Foto de perfil do Projeto HoLyrics" class="perfil animate-hover">
-            <h1 class="fade-in">Projeto HoLyrics</h1>
-            <p class="fade-in delay">Aprenda a criar letras e projeções com estilo único</p>
-            <a href="https://www.youtube.com/@projetoholyrics7226" target="_blank" class="btn fade-in delay-2">Visite nosso canal</a>
+
+    <!-- Banner estilo YouTube -->
+    <header class="yt-banner">
+        <img src="foto-canal-enviada.jpg" alt="Foto de perfil Projeto HoLyrics" class="yt-profile">
+        <div class="yt-channel-info">
+            <h1>Projeto HoLyrics</h1>
+            <p>Davi Samuel • Canal independente ensinando HoLyrics</p>
+            <a href="https://www.youtube.com/@projetoholyrics7226" target="_blank" class="yt-btn">Inscrever-se</a>
         </div>
     </header>
 
-    <main>
+    <main class="container">
+
         <!-- Sobre o Canal -->
-        <section class="card fade-up">
+        <section class="yt-card">
             <h2>O que é o Projeto HoLyrics?</h2>
             <p>
                 Fala Galera, tudo bem? <br><br>
@@ -31,49 +33,28 @@
             </p>
         </section>
 
-        <!-- Origem do Canal -->
-        <section class="card fade-up delay-1">
-            <h2>Como o canal surgiu?</h2>
-            <p>
-                O canal surgiu da paixão por música, letras e edição de projeções, com a proposta de ajudar outros a criarem seus conteúdos visuais usando o HoLyrics. Cada vídeo é feito com cuidado para inspirar e ensinar.
-            </p>
-            <img src="sua-foto.jpg" alt="Foto do Criador do Canal" class="foto animate-hover">
+        <!-- Vídeo em destaque estilo YouTube -->
+        <section class="yt-card">
+            <h2>Vídeo em destaque</h2>
+            <div class="yt-video">
+                <iframe src="https://www.youtube.com/embed/OV-IKDfAahk" 
+                        title="Vídeo em destaque do Projeto HoLyrics" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <a href="https://youtu.be/OV-IKDfAahk" target="_blank" class="yt-btn">Assistir no YouTube</a>
         </section>
 
-        <!-- Vídeo em destaque -->
-<section class="card fade-up delay-2">
-    <h2>Vídeo em destaque</h2>
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/OV-IKDfAahk" 
-                title="Vídeo em destaque do Projeto HoLyrics" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
-    </div>
-    <p>Confira esse vídeo do canal Projeto HoLyrics. <a href="https://youtu.be/OV-IKDfAahk" target="_blank">Assistir no YouTube</a></p>
-</section>
+        
 
     </main>
 
-    <!-- Rodapé -->
-    <footer>
+    <footer class="yt-footer">
         <p>&copy; 2025 Projeto HoLyrics. Todos os direitos reservados.</p>
-        <p>Visite nosso canal: <a href="https://www.youtube.com/@projetoholyrics7226" target="_blank">Projeto HoLyrics</a></p>
+        <p><a href="https://www.youtube.com/@projetoholyrics7226" target="_blank">Visite o canal Projeto HoLyrics</a></p>
     </footer>
 
-    <!-- Script para animação ao rolar -->
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    entry.target.classList.add('show');
-                }
-            });
-        }, { threshold: 0.2 });
-
-        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    </script>
 </body>
 </html>
