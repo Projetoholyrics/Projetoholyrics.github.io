@@ -7,30 +7,69 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
   <header class="bg-orange-600 text-white py-4 shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center px-6">
-      <h1 class="text-2xl font-bold">Projeto Holyrics</h1>
-      <nav class="space-x-6 hidden md:block">
+      <div class="flex items-center space-x-4">
+        <!-- Foto do canal -->
+        <img src="https://img.youtube.com/vi/OV-IKDfAahk/maxresdefault.jpg" alt="Foto do Canal" class="w-12 h-12 rounded-full border-2 border-white">
+        <h1 class="text-2xl font-bold">Projeto Holyrics</h1>
+      </div>
+
+      <!-- Navegação -->
+      <nav class="space-x-6 hidden md:flex items-center">
         <a href="#home" class="hover:text-orange-200">Início</a>
         <a href="#sobre" class="hover:text-orange-200">Sobre</a>
         <a href="#aulas" class="hover:text-orange-200">Aulas</a>
+        <a href="#download" class="hover:text-orange-200">Download</a>
         <a href="#contato" class="hover:text-orange-200">Contato</a>
         <button id="btnCompartilhar" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Compartilhar 🔗</button>
       </nav>
     </div>
   </header>
 
-  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-orange-100 to-white px-6">
-    <h2 class="text-4xl md:text-5xl font-bold text-orange-700 mb-4">Aprenda Holyrics de forma prática 🎶</h2>
-    <p class="text-lg md:text-xl max-w-2xl mb-6">O <strong>Projeto Holyrics</strong> é dedicado a ajudar ministérios e igrejas a utilizarem o programa Holyrics com excelência. Aqui você encontra tutoriais e dicas para tornar suas apresentações mais criativas e profissionais.</p>
+  <!-- Home -->
+  <section id="home" class="min-h-screen flex flex-col justify-start items-center text-center bg-gradient-to-b from-orange-100 to-white px-6 pt-6">
+    <!-- Banner do Canal -->
+    <div class="mb-6 w-full max-w-5xl">
+      <a href="https://www.youtube.com/@projetoholyrics7226" target="_blank">
+        <img src="https://raw.githubusercontent.com/nadatemeres-code/site-do-projeto-holyrics-/refs/heads/main/toda%20ter%C3%A7a-feira.png"
+             alt="Banner do Canal Projeto Holyrics"
+             class="w-full rounded-2xl shadow-lg">
+      </a>
+    </div>
+
+    <h2 class="text-4xl md:text-5xl font-bold text-orange-700 mb-4 mt-4">
+      Aprenda Holyrics de forma prática 🎶
+    </h2>
+    <p class="text-lg md:text-xl max-w-2xl mb-6">
+      O <strong>Projeto Holyrics</strong> é dedicado a ajudar ministérios e igrejas a utilizarem o programa Holyrics com excelência. Aqui você encontra tutoriais e dicas para tornar suas apresentações mais criativas e profissionais.
+    </p>
     <a href="#aulas" class="bg-orange-500 text-white px-6 py-3 rounded-xl hover:bg-orange-600 transition">Assistir Aulas</a>
   </section>
 
+  <!-- Sobre -->
   <section id="sobre" class="py-20 bg-white px-6 text-center">
-    <h2 class="text-3xl font-semibold text-orange-700 mb-6">Sobre o Projeto</h2>
-    <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">O <strong>Projeto Holyrics</strong> foi criado para capacitar equipes de mídia e louvor a usarem o Holyrics de forma criativa. Nosso foco é tornar o aprendizado acessível e prático, para que cada igreja possa adorar com mais qualidade e beleza visual.</p>
+    <h2 class="text-3xl font-semibold text-orange-700 mb-6">Sobre o Canal</h2>
+    <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-4">
+      Galera, este é o Canal <strong>Projeto Holyrics</strong>, composto por uma pessoa que é o dono do canal: <strong>Davi Samuel</strong>.
+    </p>
+    <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-4">
+      Estou aqui para ensinar vocês e quem quiser aprender a mexer nesse programa fantástico que é o <strong>Holyrics</strong>.
+    </p>
+    <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-4">
+      Este é um canal independente, focado somente em ensinar vocês a aprender a mexer no programa Holyrics.
+    </p>
+    <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-4">
+      Temos vídeos toda sexta-feira à partir das 12:30 da tarde, vídeos que vão te levar ao aprendizado desse programa fantástico e cheio de recursos que vocês podem usar.
+    </p>
+    <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+      Espero muito que curtam o canal, que se sintam à vontade para fazer perguntas, e que possamos juntos caminhar nessa jornada.
+    </p>
   </section>
 
+  <!-- Aulas -->
   <section id="aulas" class="py-20 bg-orange-50 px-6 text-center">
     <h2 class="text-3xl font-semibold text-orange-700 mb-10">Tutoriais e Dicas</h2>
     <div class="grid md:grid-cols-3 gap-8">
@@ -59,6 +98,19 @@
     </div>
   </section>
 
+  <!-- Download -->
+  <section id="download" class="py-20 bg-orange-50 px-6 text-center">
+    <h2 class="text-3xl font-semibold text-orange-700 mb-6">Downloads</h2>
+    <p class="text-gray-700 mb-6 max-w-3xl mx-auto">
+      Aqui você pode baixar materiais relacionados ao Holyrics, tutoriais, apresentações e recursos que facilitam seu aprendizado.
+    </p>
+    <div class="flex flex-col md:flex-row justify-center gap-6">
+      <a href="link_para_arquivo_1.zip" class="bg-orange-500 text-white px-6 py-3 rounded-xl hover:bg-orange-600 transition">Baixar Tutorial 1</a>
+      <a href="link_para_arquivo_2.zip" class="bg-orange-500 text-white px-6 py-3 rounded-xl hover:bg-orange-600 transition">Baixar Recursos</a>
+    </div>
+  </section>
+
+  <!-- Contato -->
   <section id="contato" class="py-20 bg-white px-6 text-center">
     <h2 class="text-3xl font-semibold text-orange-700 mb-6">Fale Conosco</h2>
     <p class="text-gray-700 mb-6">Quer sugerir temas, tirar dúvidas ou colaborar com o projeto? Entre em contato pelas redes abaixo:</p>
@@ -69,10 +121,12 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="bg-orange-600 text-white text-center py-4">
     <p>© 2025 Projeto Holyrics - Desenvolvido por Davi Samuel</p>
   </footer>
 
+  <!-- Script Compartilhar -->
   <script>
     document.getElementById('btnCompartilhar').addEventListener('click', async () => {
       const url = window.location.href;
@@ -89,5 +143,6 @@
       }
     });
   </script>
+
 </body>
 </html>
