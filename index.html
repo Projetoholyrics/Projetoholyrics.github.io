@@ -12,7 +12,6 @@
   <header class="bg-orange-600 text-white py-4 shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center px-6">
       <div class="flex items-center space-x-4">
-        <!-- Foto do canal -->
         <img src="https://raw.githubusercontent.com/nadatemeres-code/site-do-projeto-holyrics-/ffd4101836b41fbd15daf390dd6c41f2310fb178/Imagem%20do%20WhatsApp%20de%202025-08-27%20%C3%A0(s)%2012.10.02_a28fbfa3.jpg" 
              alt="Foto do Canal" class="w-12 h-12 rounded-full border-2 border-white">
         <h1 class="text-2xl font-bold">Projeto Holyrics</h1>
@@ -26,22 +25,18 @@
         <a href="#videos" class="hover:text-orange-200">Vídeos Recentes</a>
         <a href="#download" class="hover:text-orange-200">Download</a>
         <a href="#sobre" class="hover:text-orange-200">Sobre</a>
-        <button id="btnCompartilhar" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Compartilhar 🔗</button>
       </nav>
 
       <!-- Botão hambúrguer mobile -->
-      <div class="md:hidden flex items-center">
-        <button id="menu-btn" class="focus:outline-none">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-               xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
     </div>
 
-    <!-- Menu mobile -->
+    <!-- Menu Mobile -->
     <div id="mobile-menu" class="hidden md:hidden bg-orange-500 px-6 pt-4 pb-6 space-y-3">
       <a href="#home" class="block text-white font-semibold hover:text-orange-200">Início</a>
       <a href="#apresentacao" class="block text-white font-semibold hover:text-orange-200">Apresentação</a>
@@ -49,17 +44,14 @@
       <a href="#videos" class="block text-white font-semibold hover:text-orange-200">Vídeos Recentes</a>
       <a href="#download" class="block text-white font-semibold hover:text-orange-200">Download</a>
       <a href="#sobre" class="block text-white font-semibold hover:text-orange-200">Sobre</a>
-      <button id="btnCompartilharMobile" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Compartilhar 🔗</button>
     </div>
   </header>
 
   <!-- Home -->
   <section id="home" class="min-h-screen flex flex-col justify-start items-center text-center bg-gradient-to-b from-orange-100 to-white px-6 pt-6">
-    <!-- Banner do Canal -->
     <div class="mb-6 w-full max-w-5xl">
       <a href="https://www.youtube.com/@projetoholyrics7226" target="_blank">
         <img src="https://raw.githubusercontent.com/nadatemeres-code/site-do-projeto-holyrics-/refs/heads/main/toda%20ter%C3%A7a-feira.png"
-             alt="Banner do Canal Projeto Holyrics"
              class="w-full rounded-2xl shadow-lg">
       </a>
     </div>
@@ -68,116 +60,174 @@
       Aprenda Holyrics de forma prática 🎶
     </h2>
     <p class="text-lg md:text-xl max-w-2xl mb-6">
-      O <strong>Projeto Holyrics</strong> é dedicado a ajudar ministérios e igrejas a utilizarem o programa Holyrics com excelência. Aqui você encontra tutoriais e dicas para tornar suas apresentações mais criativas e profissionais.
+      O <strong>Projeto Holyrics</strong> ajuda ministérios e igrejas a usarem o Holyrics com excelência!
     </p>
     <a href="#aulas" class="bg-orange-500 text-white px-6 py-3 rounded-xl hover:bg-orange-600 transition">Assistir Aulas</a>
   </section>
 
-  <!-- BANNERS DESTACADOS -->
+  <!-- Recursos -->
   <section id="recursos" class="py-12 px-6">
     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-start">
 
-      <!-- Banner 1 + Texto -->
+      <!-- CARD 1 -->
       <div class="bg-white p-6 rounded-2xl shadow-lg">
-        <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/ChatGPT%20Image%2017%20de%20nov.%20de%202025,%2016_07_20.png?raw=true" alt="Download de Letras e Harpa Cristã" class="w-full rounded-xl mb-4">
+        <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/ChatGPT%20Image%2017%20de%20nov.%20de%202025,%2016_07_20.png?raw=true" 
+             class="w-full rounded-xl mb-4">
         <h3 class="text-2xl font-bold text-orange-700 mb-2">Download de Letras e Harpa Cristã para o HoLyrics</h3>
-        <p class="text-gray-700 leading-relaxed">Tenha acesso a um acervo completo de letras e Harpa Cristã totalmente compatíveis com o HoLyrics. Todos os arquivos são organizados, revisados e prontos para importar no software, garantindo praticidade e agilidade na hora do culto. Seja para louvor, estudos ou ministrações, você encontra aqui tudo que precisa para projetar com excelência no seu ministério.</p>
+        <p class="text-gray-700 leading-relaxed">
+          Tenha acesso a um acervo completo de letras e Harpa Cristã totalmente compatíveis com o HoLyrics.
+        </p>
       </div>
 
-      <!-- Banner 2 + Texto -->
+      <!-- CARD 2 -->
       <div class="bg-white p-6 rounded-2xl shadow-lg">
-        <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/ChatGPT%20Image%2017%20de%20nov.%20de%202025,%2016_08_03.png?raw=true" alt="Packs de Temas Animados" class="w-full rounded-xl mb-4">
+        <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/ChatGPT%20Image%2017%20de%20nov.%20de%202025,%2016_08_03.png?raw=true" 
+             class="w-full rounded-xl mb-4">
         <h3 class="text-2xl font-bold text-orange-700 mb-2">Packs de Temas Animados para o HoLyrics</h3>
-        <p class="text-gray-700 leading-relaxed">Transforme suas projeções com temas animados exclusivos para o HoLyrics! Nossos packs incluem fundos em alta resolução, animações suaves e estilos que combinam com qualquer tipo de culto ou evento especial. Ideal para quem deseja trazer mais vida, beleza e qualidade visual às ministrações. Baixe agora e eleve a experiência da sua igreja a outro nível.</p>
+        <p class="text-gray-700 leading-relaxed">
+          Transforme suas projeções com temas animados exclusivos para o HoLyrics!
+        </p>
       </div>
+
+    </div>
+  </section>
+
+  <!-- Aulas -->
+  <section id="aulas" class="py-20 bg-orange-50 px-6 text-center">
+    <h2 class="text-3xl font-semibold text-orange-700 mb-10">Tutoriais e Dicas</h2>
+    <a href="https://www.youtube.com/@projetoholyrics7226" target="_blank"
+       class="bg-orange-500 text-white px-8 py-3 rounded-xl hover:bg-orange-600 transition text-lg font-semibold">
+      🎥 Visite o Canal no YouTube
+    </a>
+  </section>
+
+  <!-- Vídeos Recentes -->
+  <section id="videos" class="py-20 bg-orange-50 px-6 text-center">
+    <h2 class="text-3xl font-semibold text-orange-700 mb-10">Vídeos Recentes</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <a href="https://youtu.be/n2mn7XnrSt4" target="_blank">
+          <img src="https://img.youtube.com/vi/n2mn7XnrSt4/maxresdefault.jpg" class="w-full rounded-lg mb-4">
+        </a>
+        <iframe class="w-full aspect-video rounded-lg mb-4"
+                src="https://www.youtube.com/embed/n2mn7XnrSt4" allowfullscreen></iframe>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <a href="https://youtu.be/_qQ4qaPw_0Y" target="_blank">
+          <img src="https://img.youtube.com/vi/_qQ4qaPw_0Y/maxresdefault.jpg" class="w-full rounded-lg mb-4">
+        </a>
+        <iframe class="w-full aspect-video rounded-lg mb-4"
+                src="https://www.youtube.com/embed/_qQ4qaPw_0Y" allowfullscreen></iframe>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <a href="https://youtu.be/v7UWiTkWpEc" target="_blank">
+          <img src="https://img.youtube.com/vi/v7UWiTkWpEc/maxresdefault.jpg" class="w-full rounded-lg mb-4">
+        </a>
+        <iframe class="w-full aspect-video rounded-lg mb-4"
+                src="https://www.youtube.com/embed/v7UWiTkWpEc" allowfullscreen></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Vídeos Mais Acessados -->
+  <section id="mais-acessados" class="py-20 bg-white px-6 text-center">
+    <h2 class="text-3xl font-semibold text-orange-700 mb-10">🔥 Vídeos Mais Acessados</h2>
+
+    <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+
+      <div class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <a href="https://www.youtube.com/watch?v=4G1HDMVw6xg" target="_blank">
+          <img src="https://img.youtube.com/vi/4G1HDMVw6xg/maxresdefault.jpg"
+               class="w-full rounded-xl mb-4">
+        </a>
+        <iframe class="w-full aspect-video rounded-xl mb-4"
+                src="https://www.youtube.com/embed/4G1HDMVw6xg" allowfullscreen></iframe>
+        <h3 class="text-xl font-semibold text-orange-700">Como Usar o Holyrics — Tutorial Completo</h3>
+      </div>
+
+      <div class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <a href="https://www.youtube.com/watch?v=-sqvsChYEOk" target="_blank">
+          <img src="https://img.youtube.com/vi/-sqvsChYEOk/maxresdefault.jpg"
+               class="w-full rounded-xl mb-4">
+        </a>
+        <iframe class="w-full aspect-video rounded-xl mb-4"
+                src="https://www.youtube.com/embed/-sqvsChYEOk" allowfullscreen></iframe>
+        <h3 class="text-xl font-semibold text-orange-700">Guia Completo — Configurações do Holyrics</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Redes Sociais -->
+  <section id="links" class="py-20 bg-orange-50 px-6 text-center">
+    <h2 class="text-3xl font-semibold text-orange-700 mb-10">🌐 Redes do Projeto Holyrics</h2>
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6 max-w-3xl mx-auto">
+
+      <a href="https://chat.whatsapp.com/C3RhvCOREhHIfZOlPRQTKu" target="_blank"
+         class="w-full md:w-auto bg-green-500 text-white px-8 py-3 rounded-xl text-lg font-semibold shadow hover:bg-green-600 transition">
+        🔗 Grupo do WhatsApp
+      </a>
+
+      <a href="https://www.instagram.com/holyrics_projeto/" target="_blank"
+         class="w-full md:w-auto bg-pink-500 text-white px-8 py-3 rounded-xl text-lg font-semibold shadow hover:bg-pink-600 transition">
+        📸 Instagram Oficial
+      </a>
+
+      <a href="https://www.youtube.com/@projetoholyrics7226" target="_blank"
+         class="w-full md:w-auto bg-red-600 text-white px-8 py-3 rounded-xl text-lg font-semibold shadow hover:bg-red-700 transition">
+        ▶️ Canal no YouTube
+      </a>
 
     </div>
   </section>
 
   <!-- Apresentação -->
   <section id="apresentacao" class="py-20 bg-orange-50 px-6 text-center">
-    <h2 class="text-3xl font-semibold text-orange-700 mb-6">Apresentação</h2>
-    <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mb-4">
-      Olá! Este é o Projeto Holyrics, um canal dedicado a ensinar ministérios e igrejas a utilizarem o programa Holyrics de forma criativa e prática.
-    </p>
+    <h2 class="text-3xl font-semibold text-orange-700 mb-10">Apresentação do Site</h2>
     <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
-      Aqui você encontrará tutoriais, dicas, recursos e tudo o que precisa para deixar suas apresentações ainda mais profissionais e bonitas.
+      Seja bem-vindo ao <strong>Projeto Holyrics</strong>! Este site foi criado especialmente para ajudar ministérios, igrejas e equipes de mídia
+      a aprender e dominar o programa Holyrics de forma prática e eficiente.
+    </p>
+    <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed mt-4">
+      Aqui você encontrará tutoriais, dicas, recursos, downloads e ferramentas que vão elevar a qualidade das suas projeções e apresentações,
+      tornando a experiência no culto ainda mais visual e profissional.
     </p>
   </section>
 
-  <!-- Aulas -->
-  <section id="aulas" class="py-20 bg-orange-50 px-6 text-center">
-    <h2 class="text-3xl font-semibold text-orange-700 mb-10">Tutoriais e Dicas</h2>
-    <div class="grid md:grid-cols-3 gap-8"></div>
-    <div class="mt-12">
-      <a href="https://www.youtube.com/@projetoholyrics7226" target="_blank" class="inline-block bg-orange-500 text-white px-8 py-3 rounded-xl hover:bg-orange-600 transition text-lg font-semibold">🎥 Visite o Canal no YouTube</a>
-    </div>
+  <!-- Sobre -->
+  <section id="sobre" class="py-20 bg-white px-6 text-center">
+    <h2 class="text-3xl font-semibold text-orange-700 mb-10">Sobre o Canal</h2>
+    <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed whitespace-pre-line">
+
+Fala Galera Tudo Bem?
+
+Galera, este é o Canal Projeto Holyrics, composto por uma pessoa no qual é o dono do Canal Projeto Holyrics,
+que é : <strong>Davi Samuel</strong>.
+Estou aqui para ensinar vocês e quem quiser aprender a mexer nesse programa fantástico que é o Holyrics.
+Este é um canal independente, focado somente em ensinar vocês a aprender a mexer no programa Holyrics.
+
+Temos vídeos toda sexta-feira a partir das <strong>12:30 da tarde</strong>. Vídeos que vão te levar ao aprendizado desse programa fantástico e
+cheio de recursos que vocês podem usar.
+
+Espero muito que curtam o canal e que vocês se sintam à vontade pra fazer perguntas, e que possamos juntos caminhar nessa jornada.
+    </p>
   </section>
 
-  <!-- Vídeos Recentes -->
-  <section id="videos" class="py-20 bg-orange-50 px-6 text-center">
-    <h2 class="text-3xl font-semibold text-orange-700 mb-10">Vídeos Recentes</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <!-- Vídeo 1 -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <a href="https://youtu.be/n2mn7XnrSt4" target="_blank">
-          <img src="https://img.youtube.com/vi/n2mn7XnrSt4/maxresdefault.jpg" class="w-full rounded-lg mb-4">
-        </a>
-        <iframe class="w-full aspect-video rounded-lg mb-4" src="https://www.youtube.com/embed/n2mn7XnrSt4" allowfullscreen></iframe>
-      </div>
-      <!-- Vídeo 2 -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <a href="https://youtu.be/_qQ4qaPw_0Y" target="_blank">
-          <img src="https://img.youtube.com/vi/_qQ4qaPw_0Y/maxresdefault.jpg" class="w-full rounded-lg mb-4">
-        </a>
-        <iframe class="w-full aspect-video rounded-lg mb-4" src="https://www.youtube.com/embed/_qQ4qaPw_0Y" allowfullscreen></iframe>
-      </div>
-      <!-- Vídeo 3 -->
-      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-        <a href="https://youtu.be/v7UWiTkWpEc" target="_blank">
-          <img src="https://img.youtube.com/vi/v7UWiTkWpEc/maxresdefault.jpg" class="w-full rounded-lg mb-4">
-        </a>
-        <iframe class="w-full aspect-video rounded-lg mb-4" src="https://www.youtube.com/embed/v7UWiTkWpEc" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
+  <!-- Script do Menu -->
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
 
-  <!-- Vídeos Mais Acessados -->
-<section id="mais-acessados" class="py-20 bg-white px-6 text-center">
-  <h2 class="text-3xl font-semibold text-orange-700 mb-10">🔥 Vídeos Mais Acessados</h2>
-
-  <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-
-    <!-- Vídeo 1 -->
-    <div class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
-      <a href="https://www.youtube.com/watch?v=4G1HDMVw6xg" target="_blank">
-        <img src="https://img.youtube.com/vi/4G1HDMVw6xg/maxresdefault.jpg"
-             class="w-full rounded-xl mb-4" alt="Vídeo Mais Acessado 1">
-      </a>
-      <iframe class="w-full aspect-video rounded-xl mb-4"
-              src="https://www.youtube.com/embed/4G1HDMVw6xg"
-              allowfullscreen></iframe>
-      <h3 class="text-xl font-semibold text-orange-700">
-        Como Usar o Holyrics — Tutorial Completo
-      </h3>
-    </div>
-
-    <!-- Vídeo 2 -->
-    <div class="bg-gray-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
-      <a href="https://www.youtube.com/watch?v=-sqvsChYEOk" target="_blank">
-        <img src="https://img.youtube.com/vi/-sqvsChYEOk/maxresdefault.jpg"
-             class="w-full rounded-xl mb-4" alt="Vídeo Mais Acessado 2">
-      </a>
-      <iframe class="w-full aspect-video rounded-xl mb-4"
-              src="https://www.youtube.com/embed/-sqvsChYEOk"
-              allowfullscreen></iframe>
-      <h3 class="text-xl font-semibold text-orange-700">
-        Guia Completo — Configurações do Holyrics
-      </h3>
-    </div>
-
-  </div>
-</section>
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
 
 </body>
 </html>
