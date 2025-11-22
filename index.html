@@ -1397,6 +1397,70 @@ Espero muito que curtam o canal e que vocês se sintam à vontade pra fazer perg
       menu.classList.toggle("hidden");
     });
   </script>
+<!-- Banner de Cookies - Tema Laranja -->
+<style>
+  #cookie-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(200px);
+    width: 90%;
+    max-width: 450px;
+    background: rgba(255, 102, 0, 0.95); /* laranja principal */
+    color: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    z-index: 99999;
+    opacity: 0;
+    transition: all .5s ease;
+  }
+
+  #cookie-box.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  #cookie-box button {
+    margin-top: 12px;
+    width: 100%;
+    padding: 10px;
+    background: #ff8300; /* laranja claro */
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background .3s;
+  }
+
+  #cookie-box button:hover {
+    background: #e56f00; /* laranja escuro */
+  }
+</style>
+
+<div id="cookie-box">
+  Este site utiliza cookies para melhorar sua experiência. 
+  Ao continuar navegando, você concorda com nossa política de privacidade.
+  <button id="acceptCookies">Aceitar Cookies</button>
+</div>
+
+<script>
+  window.addEventListener("load", function(){
+    if(!localStorage.getItem("cookieConsent")) {
+      const box = document.getElementById("cookie-box");
+      setTimeout(() => box.classList.add("show"), 300);
+    }
+
+    document.getElementById("acceptCookies").onclick = function() {
+      localStorage.setItem("cookieConsent", "true");
+      document.getElementById("cookie-box").classList.remove("show");
+    };
+  });
+</script>
 
 </body>
 </html>
