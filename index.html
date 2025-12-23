@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projeto Holyrics</title>
   <script src="https://cdn.tailwindcss.com"></script>
-</head>
+|</head>
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Header -->
@@ -22,20 +22,26 @@
         <h1 class="text-2xl font-bold">Projeto Holyrics</h1>
       </div>
 
-      <!-- Navegação desktop -->
-      <nav class="space-x-6 hidden md:flex items-center">
-        <a href="#home" class="hover:text-orange-200">Início</a>
-        <a href="#apresentacao" class="hover:text-orange-200">apresentação</a>
-        <a href="#Backgrounds" class="hover:text-orange-200">Backgrounds</a>
-        <a href="#aulas" class="hover:text-orange-200">aulas</a>
-        <a href="#Artigos" class="hover:text-orange-200">Artigos  </a>
-        <a href="#videos" class="hover:text-orange-200">Vídeos Recentes</a>
-        <a href="#download" class="hover:text-orange-200">download</a>
-        <a href="#sobre" class="hover:text-orange-200">Sobre</a>
-        <a href="#contato" class="hover:text-orange-200">Contato</a>
-      </nav>
+    <!-- Navegação desktop -->
+<nav class="space-x-6 hidden md:flex items-center">
+  <a href="#home" class="hover:text-orange-200">Início</a>
+  <a href="#apresentacao" class="hover:text-orange-200">Apresentação</a>
+  <a href="#backgrounds" class="hover:text-orange-200">Backgrounds</a>
+  <a href="#aulas" class="hover:text-orange-200">Aulas</a>
+  <a href="#artigos" class="hover:text-orange-200">Artigos</a>
+  <a href="#videos" class="hover:text-orange-200">Vídeos Recentes</a>
+  <a href="#download" class="hover:text-orange-200">Download</a>
+  <a href="#sobre" class="hover:text-orange-200">Sobre</a>
+  <a href="#contato" class="hover:text-orange-200">Contato</a>
+</nav>
 
-      <!-- Botão Compartilhar -->
+
+  <!-- LINK PARA O BLOCO -->
+  <a href="#dicas-holyrics" class="hover:text-orange-200 font-semibold">
+    Dicas Holyrics
+      </a>
+</nav>
+<!-- Botão Compartilhar -->
       <button onclick="navigator.share({title: 'Projeto Holyrics', text: 'Confira este site incrível!', url: window.location.href})"
               class="bg-white text-orange-600 px-4 py-1 rounded-xl font-semibold shadow hover:bg-orange-100 transition">
         Compartilhar
@@ -1705,7 +1711,6 @@ Tamanho da tela = Distância do projetor ÷ Throw Ratio
       <li>Defina o nome do culto (Ex: Culto de Domingo à Noite)</li>
       <li>Escolha a data e o horário</li>
     </ol>
-wwwwwww
     <p class="text-gray-700">
       🔸 Dica: use nomes padronizados para todos os cultos, isso facilita a organização visual.
     </p>
@@ -1814,6 +1819,7 @@ wwwwwww
         --text:#2b2b2b;
         --maxw:760px;
       }
+      
       html,body{height:100%;margin:0;font-family:Inter, Roboto, "Helvetica Neue", Arial, sans-serif;color:var(--text);background:var(--bg)}
       .page-wrapper{display:flex;justify-content:center;padding:48px 24px}
       .artigo-container{max-width:var(--maxw);width:100%;}
@@ -1903,6 +1909,63 @@ wwwwwww
 
   </body>
 </html>
+<!-- DICAS DO HOLYRICS -->
+<section id="dicas-holyrics" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center text-orange-600">
+      Dicas do Holyrics
+    </h2>
+
+    <p class="text-center text-gray-600 mt-3 mb-10">
+      Tutoriais práticos para ajudar você a usar melhor o Holyrics nos cultos
+    </p>
+
+   <!-- BANNER DA DICA -->
+<div class="max-w-4xl mx-auto">
+  <div class="relative overflow-hidden rounded-xl shadow-lg">
+    <img
+      src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/ChatGPT%20Image%2022%20de%20dez.%20de%202025,%2021_01_25.png?raw=true"
+      alt="Como mudar o layout do Holyrics"
+      class="w-full h-auto object-cover">
+  </div>
+</div>
+      </div>
+
+    </div>
+
+    <!-- DESCRIÇÃO DA DICA -->
+    <div class="max-w-3xl mx-auto mt-8 text-center">
+      <h3 class="text-xl font-semibold mb-3">
+        Como Organizar os Seus vídeos no VLC PLAYER. 
+      </h3>
+
+      <p class="text-gray-600">
+        Nesta dica você vai aprender, passo a passo, como organizar 
+        de forma simples e facil os seus videos no VLC PLAYER, para estar 
+        passando no culto da sua igreja. Montar uma playlist dos videos a serem
+        passados e ao mesmo tempo ter uma lista de videos bem organizada. 
+      </p>
+    </div>
+  <figure class="artigo-fig">
+  <iframe 
+    width="100%" 
+    height="315"
+    src="https://www.youtube.com/embed/dy1iUorSLyY"
+    title="Novos temas animados para projeção"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  <figcaption>
+    Video completo de como organizar os vidos no VLC PLAYER
+  </figcaption>
+</figure>
+
+  </div>
+</section>
+
 
 
 
