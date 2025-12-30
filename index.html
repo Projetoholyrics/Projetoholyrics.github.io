@@ -1,122 +1,1167 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
+ <head>
+    <!-- Google AdSense - Anúncios Automáticos -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1516962679050110"
+        crossorigin="anonymous"></script>
+
+        <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projeto Holyrics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+|</head>
+<body class="bg-gray-100 text-gray-800">
 
-  <!-- CSS GLOBAL -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <!-- Header -->
+  <header class="bg-orange-600 text-white py-4 shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <div class="flex items-center space-x-4">
+        <img src="https://raw.githubusercontent.com/nadatemeres-code/site-do-projeto-holyrics-/ffd4101836b41fbd15daf390dd6c41f2310fb178/Imagem%20do%20WhatsApp%20de%202025-08-27%20%C3%A0(s)%2012.10.02_a28fbfa3.jpg" 
+             alt="Foto do Canal" class="w-12 h-12 rounded-full border-2 border-white">
+        <h1 class="text-2xl font-bold">Projeto Holyrics</h1>
+      </div>
 
-<body class="bg-orange-50">
-
-<!-- ================= HEADER ================= -->
-<header class="bg-orange-500 text-white shadow">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-    <h1 class="text-2xl font-bold">
-      Projeto Holyrics
-    </h1>
-
-    <!-- MENU DESKTOP -->
-    <nav class="space-x-6 hidden md:flex items-center">
-      <a href="index.html" class="hover:text-orange-200">Início</a>
-      <a href="conteudos/apresentacao.html" class="hover:text-orange-200">Apresentação</a>
-      <a href="conteudos/backgrounds.html" class="hover:text-orange-200">Backgrounds</a>
-      <a href="conteudos/aulas.html" class="hover:text-orange-200">Aulas</a>
-      <a href="conteudos/artigos.html" class="hover:text-orange-200">Artigos</a>
-      <a href="conteudos/videos.html" class="hover:text-orange-200">Vídeos</a>
-      <a href="conteudos/download.html" class="hover:text-orange-200">Download</a>
-      <a href="conteudos/sobre.html" class="hover:text-orange-200">Sobre</a>
-      <a href="conteudos/contato.html" class="hover:text-orange-200">Contato</a>
+    <!-- Navegação desktop -->
+<nav class="space-x-6 hidden md:flex items-center">
+  <a href="#home" class="hover:text-orange-200">Início</a>
+  <a href="#apresentacao" class="hover:text-orange-200">Apresentação</a>
+  <a href="#backgrounds" class="hover:text-orange-200">Backgrounds</a>
+  <a href="#aulas" class="hover:text-orange-200">Aulas</a>
+  <a href="#artigos" class="hover:text-orange-200">Artigos</a>
+  <a href="#videos" class="hover:text-orange-200">Vídeos Recentes</a>
+  <a href="#download" class="hover:text-orange-200">Download</a>
+  <a href="#sobre" class="hover:text-orange-200">Sobre</a>
+  <a href="#contato" class="hover:text-orange-200">Contato</a>
+  <a href="#dicas-holyrics" class="hover:text-orange-200 font-semibold">
+    Dicas Holyrics
+      </a>
     </nav>
+<nav>
+  <a href="index.html">Início</a>
+  <a href="conteudos/holyrics.html">Holyrics</a>
+  <a href="conteudos/tutoriais.html">Tutoriais</a>
+  <a href="conteudos/aulas.html">Aulas</a>
+  <a href="conteudos/videos.html">Vídeos</a>
+  <a href="conteudos/dicas-holyrics.html">Dicas Holyrics</a>
+  <a href="conteudos/backgrounds.html">Backgrounds</a>
+  <a href="conteudos/artigos.html">Artigos</a>
+  <a href="conteudos/musica.html">Música</a>
+  <a href="conteudos/design.html">Design</a>
+  <a href="conteudos/projetos.html">Projetos</a>
+  <a href="conteudos/download.html">Downloads</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="contato.html">Contato</a>
+</nav>
 
-    <!-- BOTÃO MENU MOBILE -->
-    <button id="menu-btn" class="md:hidden text-2xl">
-      ☰
-    </button>
-  </div>
+<a href="../index.html">⬅ Voltar para o início</a>
+<a href="holyrics.html">Holyrics</a>
+<a href="tutoriais.html">Tutoriais</a>
+<a href="aulas.html">Aulas</a>
+<a href="videos.html">Vídeos</a>
+<a href="dicas-holyrics.html">Dicas Holyrics</a>
+<a href="backgrounds.html">Backgrounds</a>
+<a href="artigos.html">Artigos</a>
+<a href="musica.html">Música</a>
+<a href="design.html">Design</a>
+<a href="projetos.html">Projetos</a>
+<a href="download.html">Downloads</a>
 
-  <!-- MENU MOBILE -->
-  <div id="mobile-menu" class="hidden md:hidden bg-orange-500 px-6 pt-4 pb-6 space-y-3">
-    <a href="index.html" class="block font-semibold hover:text-orange-200">Início</a>
-    <a href="conteudos/apresentacao.html" class="block font-semibold hover:text-orange-200">Apresentação</a>
-    <a href="conteudos/backgrounds.html" class="block font-semibold hover:text-orange-200">Backgrounds</a>
-    <a href="conteudos/aulas.html" class="block font-semibold hover:text-orange-200">Aulas</a>
-    <a href="conteudos/artigos.html" class="block font-semibold hover:text-orange-200">Artigos</a>
-    <a href="conteudos/videos.html" class="block font-semibold hover:text-orange-200">Vídeos</a>
-    <a href="conteudos/download.html" class="block font-semibold hover:text-orange-200">Download</a>
-    <a href="conteudos/sobre.html" class="block font-semibold hover:text-orange-200">Sobre</a>
-    <a href="conteudos/contato.html" class="block font-semibold hover:text-orange-200">Contato</a>
-  </div>
-</header>
+<a href="conteudos/download.html#holyrics">Baixar Holyrics</a>
+<a href="conteudos/download.html#pack">Baixar Pack de Letras</a>
 
-<!-- ================= HERO ================= -->
-<section class="py-24 bg-white text-center">
-  <div class="max-w-4xl mx-auto px-6">
-    <h2 class="text-4xl font-bold text-orange-700 mb-6">
-      Conteúdos, Dicas e Materiais para o Holyrics
+
+<!-- Botão Compartilhar -->
+      <button onclick="navigator.share({title: 'Projeto Holyrics', text: 'Confira este site incrível!', url: window.location.href})"
+              class="bg-white text-orange-600 px-4 py-1 rounded-xl font-semibold shadow hover:bg-orange-100 transition">
+        Compartilhar
+      </button>
+
+      <!-- Botão hambúrguer mobile -->
+      <button id="menu-btn" class="md:hidden focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden bg-orange-500 px-6 pt-4 pb-6 space-y-3">
+      <a href="#home" class="block text-white font-semibold hover:text-orange-200">Início</a>
+      <a href="#apresentacao" class="block text-white font-semibold hover:text-orange-200">Apresentação</a>
+      <a href="#backgrounds"class="block text-white font-semibold hover:text-orange-200">Backgrounds</a>
+      <a href="#aulas" class="block text-white font-semibold hover:text-orange-200">Aulas</a>
+      <a href="#videos" class="block text-white font-semibold hover:text-orange-200">Vídeos Recentes</a>
+      <a href="#download" class="block text-white font-semibold hover:text-orange-200">Download</a>
+      <a href="#sobre" class="block text-white font-semibold hover:text-orange-200">Sobre</a>
+      <a href="#contato" class="block text-white font-semibold hover:text-orange-200">Contato</a>
+      <a href="#dicas-holyrics" class="hover:text-orange-200 font-semibold">
+    Dicas Holyrics
+      </a>
+    </div>
+  </header>
+
+  <!-- Home -->
+  <section id="home" class="min-h-screen flex flex-col justify-start items-center text-center bg-gradient-to-b from-orange-100 to-white px-6 pt-6">
+    <div class="mb-6 w-full max-w-5xl">
+      <a href="https://www.youtube.com/@projetoholyrics7226" target="_blank">
+        <img src="https://raw.githubusercontent.com/nadatemeres-code/site-do-projeto-holyrics-/refs/heads/main/toda%20ter%C3%A7a-feira.png"
+             class="w-full rounded-2xl shadow-lg">
+      </a>
+    </div>
+
+    <h2 class="text-4xl md:text-5xl font-bold text-orange-700 mb-4 mt-4">
+      Aprenda Holyrics de forma prática 🎶
     </h2>
-    <p class="text-gray-700 mb-8">
-      O Projeto Holyrics ajuda igrejas e ministérios a utilizarem o Holyrics de forma organizada,
-      profissional e eficiente.
+    <p class="text-lg md:text-xl max-w-2xl mb-6">
+      O <strong>Projeto Holyrics</strong> ajuda ministérios e igrejas a usarem o Holyrics com excelência!
     </p>
+    <a href="#aulas" class="bg-orange-500 text-white px-6 py-3 rounded-xl hover:bg-orange-600 transition">Assistir Aulas</a>
+  </section>
 
-    <a href="conteudos/artigos.html"
-       class="bg-orange-500 text-white px-8 py-3 rounded-xl font-semibold hover:bg-orange-600 transition">
-      Ver Artigos Semanais →
+  <!-- Aulas -->
+  <section id="aulas" class="py-20 bg-orange-50 px-6 text-center">
+    <h2 class="text-3xl font-semibold text-orange-700 mb-10">Aulas do Canal</h2>
+
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+      <!-- Aula 1 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <img src="https://img.youtube.com/vi/n2mn7XnrSt4/maxresdefault.jpg" class="rounded-xl mb-4">
+        <h3 class="text-xl font-bold text-orange-700 mb-2">HO Lyrics — Como baixar e instalar</h3>
+        <a href="https://youtu.be/n2mn7XnrSt4" target="_blank" class="text-orange-600 font-semibold hover:underline">Assistir Aula</a>
+      </div>
+
+      <!-- Aula 2 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <img src="https://img.youtube.com/vi/_qQ4qaPw_0Y/maxresdefault.jpg" class="rounded-xl mb-4">
+        <h3 class="text-xl font-bold text-orange-700 mb-2">Como adicionar temas e fundos animados</h3>
+        <a href="https://youtu.be/_qQ4qaPw_0Y" target="_blank" class="text-orange-600 font-semibold hover:underline">Assistir Aula</a>
+      </div>
+
+      <!-- Aula 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <img src="https://img.youtube.com/vi/v7UWiTkWpEc/maxresdefault.jpg" class="rounded-xl mb-4">
+        <h3 class="text-xl font-bold text-orange-700 mb-2">Como configurar o Holyrics do zero</h3>
+        <a href="https://youtu.be/v7UWiTkWpEc" target="_blank" class="text-orange-600 font-semibold hover:underline">Assistir Aula</a>
+      </div>
+ <!-- Aula 3 -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/maxresdefault.webp?raw=true" class="rounded-xl mb-4">
+        <h3 class="text-xl font-bold text-orange-700 mb-2">Novos temas Animados com novidades !</h3>
+        <a href="https://www.youtube.com/watch?v=2FtJOSmP2Vg" target="_blank" class="text-orange-600 font-semibold hover:underline">Assistir Aula</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- VÍDEOS MAIS ACESSADOS -->
+  <section id="videos" class="py-20 bg-white px-6 text-center">
+    <h2 class="text-3xl font-semibold text-orange-700 mb-10">🎬 Vídeos Mais Acessados</h2>
+
+    <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+      <!-- Vídeo 1 -->
+      <div class="bg-orange-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/ChatGPT%20Image%2017%20de%20nov.%20de%202025,%2016_07_20.png?raw=true" class="rounded-xl mb-4">
+        <h3 class="text-xl font-bold text-orange-700 mb-2">Download Harpa Cristã para Holyrics</h3>
+        <a href="https://youtu.be/4G1HDMVw6xg?si=z9mi7lzvWS4lCusd" target="_blank" class="text-orange-600 font-semibold hover:underline">Assistir Vídeo</a>
+      </div>
+
+      <!-- Vídeo 2 -->
+      <div class="bg-orange-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/ChatGPT%20Image%2017%20de%20nov.%20de%202025,%2016_08_03.png?raw=true" class="rounded-xl mb-4">
+        <h3 class="text-xl font-bold text-orange-700 mb-2">Dois Packs de Temas Animados</h3>
+        <a href="https://youtu.be/-sqvsChYEOk?si=YTBBYq2rnb4GdYfm" target="_blank" class="text-orange-600 font-semibold hover:underline">Assistir Vídeo</a>
+      </div>
+
+      <!-- Vídeo 3 -->
+      <div class="bg-orange-50 p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/maxresdefault%20(1).webp?raw=true" class="rounded-xl mb-4">
+        <h3 class="text-xl font-bold text-orange-700 mb-2">157 Temas Animados para Holyrics</h3>
+        <a href="https://www.youtube.com/watch?v=7wp5ZMGK_ec" target="_blank" class="text-orange-600 font-semibold hover:underline">Assistir Vídeo</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- Backgrounds -->
+<section id="backgrounds" class="py-20 bg-orange-50 px-6 text-center">
+  <h2 class="text-3xl font-semibold text-orange-700 mb-10">🎨 Backgrounds</h2>
+
+  <div class="bg-white p-6 max-w-xl mx-auto rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="text-2xl font-bold text-orange-700 mb-4">Pack 1 – Backgrounds Animados</h3>
+
+
+    <a href="https://www.mediafire.com/folder/4lqvrsjj0fxlj/temas+animados+para+projeção"
+       target="_blank"
+       class="bg-orange-500 text-white px-8 py-3 rounded-xl shadow hover:bg-orange-600 transition text-lg font-semibold">
+      ⬇️ Baixar Pack de Backgrounds
+    </a>
+  </div>
+</section>
+<!--backgrounds 2--> 
+<section id="backgrounds" class="py-20 bg-orange-50 px-6 text-center">
+  <h2 class="text-3xl font-semibold text-orange-700 mb-10">🎨Backgrounds</h2>
+
+  <div class="bg-white p-6 max-w-xl mx-auto rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="text-2xl font-bold text-orange-700 mb-4">Pack 2 – Backgrounds Animados 2 </h3>
+   
+    <a href="https://www.mediafire.com/file/jac41gzgfzfsn21/drive-download-20220315T094154Z-001.zip/file"
+   target="_blank"
+   class="bg-orange-500 text-white px-8 py-3 rounded-xl shadow hover:bg-orange-600 transition text-lg font-semibold">
+  ⬇️ Baixar Pack de Backgrounds 2
+  </a>
+  </div>
+  </section>
+ <!-- Backgrounds 3-->
+<section id="backgrounds" class="py-20 bg-orange-50 px-6 text-center">
+  <h2 class="text-3xl font-semibold text-orange-700 mb-10">🎨 Backgrounds</h2>
+
+  <div class="bg-white p-6 max-w-xl mx-auto rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="text-2xl font-bold text-orange-700 mb-4">Pack 3 – Temas Animados Novos</h3>
+
+    <a href="https://app.mediafire.com/folder/8h2e8g6vjqu2y/Temas+animados+para+Proje%C3%83%C2%A7%C3%83%C2%A3o(2"
+       target="_blank"
+       class="bg-orange-500 text-white px-8 py-3 rounded-xl shadow hover:bg-orange-600 transition text-lg font-semibold">
+      ⬇️ Baixar Pack de Backgrounds 3
+    </a>
+  </div>
+</section>
+ <!-- Backgrounds 4-->
+<section id="backgrounds" class="py-20 bg-orange-50 px-6 text-center">
+  <h2 class="text-3xl font-semibold text-orange-700 mb-10">🎨 Temas Animados de Natal</h2>
+
+  <div class="bg-white p-6 max-w-xl mx-auto rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="text-2xl font-bold text-orange-700 mb-4">Pack 4 – Temas Animados Novos de Natal</h3>
+
+    <a href="https://app.mediafire.com/folder/uqur9y1tm5upb/novos+temas+animados+para+25+de+dezembro"
+       target="_blank"
+       class="bg-orange-500 text-white px-8 py-3 rounded-xl shadow hover:bg-orange-600 transition text-lg font-semibold">
+      ⬇️ Baixar Pack Temas Animados de Natal
     </a>
   </div>
 </section>
 
-<!-- ================= DESTAQUES ================= -->
-<section class="py-20 bg-gray-100">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+<!-- Backgrounds 5-->
+<section id="backgrounds" class="py-20 bg-orange-50 px-6 text-center">
+  <h2 class="text-3xl font-semibold text-orange-700 mb-10">🎨 Temas Animados de Ano Novo</h2>
 
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h3 class="text-xl font-bold text-orange-700 mb-3">Artigos</h3>
-      <p class="text-gray-600 mb-4">Guias completos e conteúdos semanais sobre Holyrics.</p>
-      <a href="conteudos/artigos.html" class="text-orange-600 font-semibold hover:underline">
-        Acessar →
+  <div class="bg-white p-6 max-w-xl mx-auto rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="text-2xl font-bold text-orange-700 mb-4">Pack 5 – Temas Animados Novos de Ano Novo</h3>
+
+    <a href="https://app.mediafire.com/folder/745o7b9z6xi4q/temas+de+virada+de+ano"
+       target="_blank"
+       class="bg-orange-500 text-white px-8 py-3 rounded-xl shadow hover:bg-orange-600 transition text-lg font-semibold">
+      ⬇️ Baixar Pack Temas Animados de Ano Novo
+    </a>
+  </div>
+</section>
+<!-- Backgrounds 6-->
+<section id="backgrounds" class="py-20 bg-orange-50 px-6 text-center">
+  <h2 class="text-3xl font-semibold text-orange-700 mb-10">🎨 Novos Temas Animados </h2>
+
+  <div class="bg-white p-6 max-w-xl mx-auto rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="text-2xl font-bold text-orange-700 mb-4">Pack 6 – Novos Temas Animados </h3>
+
+    <a href="https://app.mediafire.com/folder/6mdmuxs51pphh/motion+backgrounds"
+       target="_blank"
+       class="bg-orange-500 text-white px-8 py-3 rounded-xl shadow hover:bg-orange-600 transition text-lg font-semibold">
+      ⬇️ Baixar Pack de Novos Temas Animados
+    </a>
+  </div>
+</section>
+<!-- Backgrounds 7-->
+<section id="backgrounds" class="py-20 bg-orange-50 px-6 text-center">
+  <h2 class="text-3xl font-semibold text-orange-700 mb-10">🎨 Novos Temas Animados para Projeção </h2>
+
+  <div class="bg-white p-6 max-w-xl mx-auto rounded-2xl shadow hover:shadow-lg transition">
+    <h3 class="text-2xl font-bold text-orange-700 mb-4">Pack 7 – Novos Temas Animados para Projeção </h3>
+
+    <a href="https://app.mediafire.com/folder/qlk1qcsj90diw/Temas+animados+workship"
+       target="_blank"
+       class="bg-orange-500 text-white px-8 py-3 rounded-xl shadow hover:bg-orange-600 transition text-lg font-semibold">
+      ⬇️ Baixar Pack de Temas Animados para Projeção
+    </a>
+  </div>
+</section>
+
+
+  <section class="py-16 px-6 max-w-4xl mx-auto">
+
+    <p class="text-gray-700 text-lg leading-relaxed mb-10">
+      O Holyrics é um dos softwares mais utilizados em igrejas para projeção de letras, mensagens e versículos. 
+      Para quem opera durante o culto, saber usar os atalhos da Bíblia no Holyrics pode agilizar MUITO o trabalho 
+      e evitar erros ou atrasos. Aqui você encontra um guia completo com todos os atalhos oficiais do programa.
+    </p>
+
+    <!-- Bloco -->
+    <div class="bg-white p-6 rounded-2xl shadow mb-8">
+      <h2 class="text-2xl font-semibold text-orange-700 mb-3">📌 Abrir e Exibir a Bíblia</h2>
+      <ul class="text-gray-700 leading-relaxed">
+        <li><strong>F5</strong> ou <strong>ENTER</strong> — Exibir o versículo selecionado</li>
+        <li><strong>F12</strong> — Abrir configurações da Bíblia</li>
+        <li><strong>Ctrl + F</strong> — Buscar na Bíblia</li>
+        <li><strong>Shift + Ctrl + F</strong> — Buscar apenas no livro atual</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl shadow mb-8">
+      <h2 class="text-2xl font-semibold text-orange-700 mb-3">📖 Navegação e Comparação</h2>
+      <ul class="text-gray-700 leading-relaxed">
+        <li><strong>Ctrl + O</strong> — Comparar versões da Bíblia</li>
+        <li><strong>Shift + F5</strong> — Leitura responsiva</li>
+        <li><strong>F7</strong> ou <strong>Ctrl + H</strong> — Voltar para a janela principal</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl shadow mb-8">
+      <h2 class="text-2xl font-semibold text-orange-700 mb-3">🔢 Versículos por Slide</h2>
+      <ul class="text-gray-700 leading-relaxed">
+        <li><strong>Ctrl + 1</strong> — Exibir 1 versículo</li>
+        <li><strong>Ctrl + 2</strong> — Exibir 2 versículos</li>
+        <li><strong>Ctrl + 3</strong> — Exibir 3 versículos</li>
+        <li><strong>Ctrl + 4</strong> — Exibir vários versículos (modo automático)</li>
+        <li><strong>Shift + Ctrl + Down</strong> — Aumentar quantidade</li>
+        <li><strong>Shift + Ctrl + Up</strong> — Diminuir quantidade</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl shadow mb-8">
+      <h2 class="text-2xl font-semibold text-orange-700 mb-3">👁️ Modo de Exibição</h2>
+      <ul class="text-gray-700 leading-relaxed">
+        <li><strong>Ctrl + R</strong> — Mostrar apenas a referência</li>
+        <li>Ativar/desativar segunda versão — <em>(não configurado)</em></li>
+        <li>Ativar/desativar terceira versão — <em>(não configurado)</em></li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl shadow mb-8">
+      <h2 class="text-2xl font-semibold text-orange-700 mb-3">📚 Seleção Rápida de Versão</h2>
+      <ul class="text-gray-700 leading-relaxed">
+        <li><strong>B</strong> — Abrir aba 1 das versões</li>
+        <li><strong>Ctrl + B</strong> — Abrir aba 2 das versões</li>
+        <li><strong>Shift + B</strong> — Abrir aba 3 das versões</li>
+        <li><strong>.</strong> — Primeiro atalho de versão</li>
+        <li><strong>Ctrl + .</strong> — Segundo</li>
+        <li><strong>Shift + .</strong> — Terceiro</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl shadow mb-8">
+      <h2 class="text-2xl font-semibold text-orange-700 mb-3">🎥 Exibição Rápida</h2>
+      <ul class="text-gray-700 leading-relaxed">
+        <li><strong>Ctrl + Enter</strong> — Mostrar apenas primeiro versículo</li>
+        <li><strong>Shift + Enter</strong> — Mostrar todos os versículos da seleção</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl shadow mb-8">
+      <h2 class="text-2xl font-semibold text-orange-700 mb-3">⭐ Favoritos e Playlists</h2>
+      <ul class="text-gray-700 leading-relaxed">
+        <li><strong>Alt + Enter</strong> — Adicionar aos favoritos</li>
+        <li><strong>Ctrl + Alt + Enter</strong> — Adicionar à barra de favoritos</li>
+        <li><strong>Shift + Ctrl + Alt + Enter</strong> — Adicionar à barra com versão</li>
+        <li><strong>Ctrl + L</strong> — Adicionar à playlist</li>
+        <li><strong>Shift + Ctrl + B</strong> — Ativar/desativar favoritos</li>
+      </ul>
+    </div>
+
+    <div class="bg-white p-6 rounded-2xl shadow mb-8">
+      <h2 class="text-2xl font-semibold text-orange-700 mb-3">🔍 Outros</h2>
+      <ul class="text-gray-700 leading-relaxed">
+        <li><strong>Ctrl + F5</strong> — Abrir referência rápida</li>
+      </ul>
+    </div>
+
+    <p class="text-gray-700 text-lg leading-relaxed mt-12">
+      Dominar esses atalhos vai ajudar você a operar o Holyrics com muito mais rapidez, 
+      precisão e segurança durante qualquer culto ou evento. Recomendo memorizar os atalhos 
+      que você mais usa para facilitar ainda mais o dia a dia!
+    </p>
+
+  </section>
+
+<<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chats para equipes</title>
+  </head>
+  <body>
+    <main class="page-wrapper">
+      <section class="artigo-container">
+
+        <header class="card-titulo">
+          <div class="card-inner">
+            <span class="card-icone">📘</span>
+            <h1>Chats para equipes</h1>
+          </div>
+        </header>
+
+        <article class="artigo-body">
+
+          <h2 class="hidden">Chat para Equipes</h2>
+
+          <div class="titulo-card">
+            <h1>💬 Chat para Equipes no Holyrics</h1>
+          </div>
+
+          <p>
+            Quando pensamos em equipes de projeção — tanto em igrejas menores, que não possuem muitos 
+            recursos, quanto em igrejas maiores — percebemos o quanto é essencial ter uma comunicação 
+            rápida e organizada entre todos os membros. Sem uma boa comunicação, é comum ocorrerem 
+            atrasos, desencontros de informação e até erros durante o culto.
+          </p>
+
+          <p>
+            Para resolver esse problema, o Holyrics possui uma ferramenta extremamente útil chamada 
+            <strong>Chat</strong>. Essa função permite que a equipe converse em tempo real, envie músicas 
+            que não estão carregadas no programa, compartilhe imagens, vídeos, textos e até mesmo 
+            versículos — tudo isso de forma rápida e prática.
+          </p>
+
+          <figure class="artigo-fig">
+            <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/Captura%20de%20tela%202025-12-03%20120501.png?raw=true"" alt="Chat do Holyrics" />
+            <figcaption>Exemplo da interface do Chat dentro do Holyrics.</figcaption>
+          </figure>
+
+          <h3>Onde encontrar o Chat no Holyrics?</h3>
+
+          <figure class="artigo-fig">
+            <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/foto%20001.png?raw=true" alt="Exemplo 1 - Onde encontrar o Chat no Holyrics" />
+            <figcaption>Exemplo 1: Localizando a função Chat no Holyrics.</figcaption>
+          </figure>
+
+          <figure class="artigo-fig">
+            <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/foto%20002.png?raw=true" alt="Exemplo 2 - Onde encontrar o Chat no Holyrics" />
+            <figcaption>Exemplo 2: Tela do menu onde o Chat pode ser acessado.</figcaption>
+          </figure>
+
+          <p>
+            Para acessar essa função, vá até o menu <strong>JANELA</strong> e procure pela opção 
+            <strong>CHAT</strong>. Ao abrir, você terá uma janela exclusiva onde aparecerão todas as mensagens 
+            e arquivos enviados pelos demais membros da equipe.
+          </p>
+
+          <h3>Como enviar músicas, versículos e arquivos?</h3>
+
+          <figure class="artigo-fig">
+            <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/foto%20003.png?raw=true" alt="Como enviar músicas, imagens, versículos e arquivos no Holyrics" />
+            <figcaption>Exemplo de onde enviar músicas, imagens, versículos e arquivos dentro do Chat.</figcaption>
+          </figure>
+
+          <p>
+            Dentro da janela do Chat, no canto superior direito, você verá o ícone de <strong>anexo</strong>. 
+            Ao clicar nele, três opções aparecem: enviar versículos, enviar músicas e enviar arquivos (imagens, vídeos, documentos etc.).
+          </p>
+
+          <ul>
+            <li><strong>Enviar Versículos</strong></li>
+            <li><strong>Enviar Músicas</strong></li>
+            <li><strong>Enviar Arquivos</strong> (imagens, vídeos, documentos, etc.)</li>
+          </ul>
+
+          <p>
+            Tudo o que for enviado aparecerá imediatamente para o operador do Holyrics, que pode abrir o 
+            conteúdo e exibir no telão quando necessário. Isso agiliza todo o processo e mantém a equipe 
+            totalmente conectada.
+          </p>
+
+          <p>
+            Com essa função, o Holyrics se torna ainda mais completo, oferecendo uma ferramenta de 
+            comunicação prática, eficiente e essencial para equipes de projeção.
+          </p>
+
+        </article>
+
+      </section>
+    </main>
+<section class="card novo-artigo">
+
+  <header class="card-titulo">
+    <div class="card-inner">
+      <span class="card-icone">🎬</span>
+      <h1>Novos Temas Animados</h1>
+    </div>
+  </header>
+
+  <article class="artigo-body">
+
+    <h2 class="hidden">Novos Temas Animados para Projeção</h2>
+
+    <div class="titulo-card">
+      <h1>🎥 Novos Temas Animados para Projeção – Atualização do Projeto Holyrics</h1>
+    </div>
+
+    <!-- CAPA DO ARTIGO -->
+    <figure class="artigo-fig">
+      <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/maxresdefault.webp?raw=true" 
+      alt="Capa - Novos Temas Animados para Projeção" />
+      <figcaption>Capa oficial do vídeo “Novos Temas Animados para Projeção”.</figcaption>
+    </figure>
+
+    <p>
+      O Projeto Holyrics está trazendo mais uma atualização especial para equipes de mídia e 
+      projeção: novos <strong>temas animados</strong> criados para elevar a qualidade visual de cultos, 
+      ministrações, conferências e eventos cristãos. No vídeo mais recente do nosso canal, você 
+      confere diversas animações modernas, leves e totalmente compatíveis com o Holyrics.
+    </p>
+
+    <p>
+      Esses temas foram desenvolvidos com foco em suavidade, beleza e reverência, trazendo um 
+      ambiente visual mais agradável durante momentos de louvor e adoração.
+    </p>
+
+    <figure class="artigo-fig">
+      <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/Captura%20de%20tela%202025-12-08%20121541.png?raw=true" alt="Novos temas animados para projeção" />
+      <figcaption>Exemplo de alguns dos novos temas animados apresentados no vídeo.</figcaption>
+    </figure>
+
+    <h3>✨ O que há de novo nos temas?</h3>
+
+    <p>Os novos temas incluem:</p>
+
+    <ul>
+      <li>Animações suaves e fluidas</li>
+      <li>Tons modernos em azul, dourado e laranja</li>
+      <li>Temas com cruz e elementos cristãos</li>
+      <li>Movimentos leves que não distraem o público</li>
+      <li>Compatibilidade com Holyrics, OBS, PowerPoint e VLC</li>
+    </ul>
+
+    <p>
+      Esses recursos foram criados para facilitar o trabalho dos operadores, trazendo um visual 
+      profissional mesmo em igrejas pequenas e médias que desejam aprimorar suas projeções.
+    </p>
+
+    <h3>🎨 Exemplos de estilos apresentados no vídeo</h3>
+
+    <figure class="artigo-fig">
+      <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/Captura%20de%20tela%202025-12-08%20121846.png?raw=true" alt="Temas animados estilo cruz e luz" />
+      <figcaption>Temas com cruz, luz suave e efeitos de movimento.</figcaption>
+    </figure>
+
+    <figure class="artigo-fig">
+      <img src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/Captura%20de%20tela%202025-12-08%20134806.png?raw=true" alt="Temas modernos para projeção" />
+      <figcaption>Temas modernos em cores vivas para momentos de celebração.</figcaption>
+    </figure>
+
+    <h3>📥 Como usar esses temas no Holyrics?</h3>
+
+    <p>
+      Basta baixar os vídeos dos temas em formato MP4 e adicioná-los como <strong>background</strong> dentro do Holyrics.
+      Você também pode usar no OBS, ProPresenter, e players de vídeo.
+    </p>
+
+    <p>Os temas funcionam perfeitamente como:</p>
+
+    <ul>
+      <li>Fundos para letras de músicas</li>
+      <li>Projeção de versículos</li>
+      <li>Slide de mensagens</li>
+      <li>Ambientes de oração</li>
+      <li>Introdução de culto</li>
+    </ul>
+
+    <h3>🎬 Assista ao vídeo completo</h3>
+
+    <figure class="artigo-fig">
+      <iframe width="100%" height="315" 
+        src="https://www.youtube.com/embed/2FtJOSmP2Vg" 
+        title="Novos temas animados para projeção" frameborder="0" allowfullscreen></iframe>
+      <figcaption>Vídeo oficial apresentando os novos temas animados.</figcaption>
+    </figure>
+
+    <p>
+      No vídeo, mostramos todos os temas disponíveis e como utilizá-los na prática durante o culto.
+      Vale a pena assistir para conferir todos os detalhes e também os novos temas que os desenvolvedores do holyrics colocaram para comemorar os 9 anos de crição do holyrics.
+    </p>
+
+    <p>
+      Continue acompanhando o Projeto Holyrics para mais temas, tutoriais e conteúdos especiais
+      para equipes de projeção.
+    </p>
+
+  </article>
+
+</section>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia do Iniciante – Holyrics</title>
+
+  <!-- Tailwind (igual ao site do canal) -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+  <main class="max-w-4xl mx-auto p-6 mt-10 bg-white rounded-2xl shadow">
+
+    <!-- Título -->
+    <header class="mb-6">
+      <h1 class="text-3xl font-bold text-orange-700 mb-2">
+        📘 Guia do Iniciante – Programa de Projeção Holyrics
+      </h1>
+      <p class="text-gray-700">
+        Um resumo completo do Guia Oficial do Holyrics para quem está começando a operar o programa
+        ou deseja aprimorar o uso nas projeções da igreja.
+      </p>
+    </header>
+
+    <!-- Botão de Download -->
+    <a 
+      href="https://drive.google.com/file/d/1GPaD40c4O7lNdo1_4LOSxJsx-YUPpXM_/view?usp=drive_link"
+      target="_blank"
+      class="bg-orange-600 text-white px-4 py-2 rounded-lg shadow hover:bg-orange-700 transition inline-block mb-6">
+      📥 Abrir PDF no Google Drive
+    </a>
+
+    <!-- Visualizador do PDF (preview) -->
+    <div class="w-full mb-10">
+      <iframe
+        src="https://drive.google.com/file/d/1GPaD40c4O7lNdo1_4LOSxJsx-YUPpXM_/preview"
+        width="100%"
+        height="700px"
+        allow="autoplay"
+        style="border:none;">
+      </iframe>
+    </div>
+
+    <!-- ARTIGO TEXTO -->
+    <section class="prose max-w-none text-gray-800">
+
+      <h2>O que é o Guia do Iniciante?</h2>
+      <p>
+        O <strong>Guia do Iniciante – Programa de Projeção Holyrics</strong> é um material oficial pensado 
+        para ajudar novos operadores a entenderem os principais recursos do Holyrics de forma simples, prática e rápida.
+        Ele também é muito útil para quem já utiliza o programa, mas ainda não explorou todas as funções.
+      </p>
+
+      <h2>Conteúdos abordados no guia</h2>
+      <ul>
+        <li>Introdução ao Holyrics</li>
+        <li>Interface e estrutura do programa</li>
+        <li>Como projetar músicas e organizar letras</li>
+        <li>Exibição de versículos e uso da Bíblia</li>
+        <li>Como inserir vídeos, imagens e mídias</li>
+        <li>Configurações principais para operadores</li>
+        <li>Dicas práticas e atalhos que aceleram o trabalho</li>
+      </ul>
+
+      <h2>Por que esse guia é importante?</h2>
+      <p>
+        Com ele, você aprende a operar o Holyrics com segurança e rapidez, evitando erros durante o culto,
+        além de melhorar a qualidade da projeção e o fluxo de trabalho da equipe.
+      </p>
+
+      <h2>Como baixar o guia</h2>
+      <p>
+        Basta clicar no botão acima ou no link abaixo:
+      </p>
+
+      <p>
+        👉 <a class="text-orange-600 font-semibold hover:underline"
+          href="https://drive.google.com/file/d/1GPaD40c4O7lNdo1_4LOSxJsx-YUPpXM_/view?usp=drive_link"
+          target="_blank">
+          Abrir/baixar Guia do Iniciante – Holyrics (PDF)
+        </a>
+      </p>
+
+    </section>
+<!-- Artigo: Como organizar os dias dos cultos no Holyrics -->
+<section id="artigo-organizar-cultos-holyrics" class="py-20 bg-white px-6 text-center">
+  <h2 class="text-3xl font-semibold text-orange-700 mb-10">📅 Artigo — Como organizar os dias dos cultos no Holyrics</h2>
+
+  <div class="max-w-4xl mx-auto text-left space-y-6">
+
+    <p class="text-gray-700">
+      Manter os dias dos cultos bem organizados no Holyrics é essencial para facilitar a rotina da equipe de mídia,
+      evitar erros durante a projeção e deixar tudo pronto com antecedência. Neste artigo, você vai aprender
+      passo a passo como organizar corretamente os dias dos cultos dentro do Holyrics, criando uma estrutura
+      simples, prática e profissional.
+    </p>
+
+    <!-- 1. Por que organizar os dias dos cultos -->
+    <h3 class="text-2xl font-semibold text-orange-700 mt-4">1. Por que organizar os dias dos cultos no Holyrics?</h3>
+
+    <p class="text-gray-700">
+      Quando os cultos não estão organizados, é comum acontecerem problemas como músicas erradas,
+      letras repetidas, ordem confusa e atraso na hora do culto. O Holyrics oferece ferramentas
+      específicas para evitar tudo isso.
+    </p>
+
+    <ul class="list-disc pl-6 text-gray-700">
+      <li>Facilita a preparação antecipada dos cultos</li>
+      <li>Evita erros durante a projeção</li>
+      <li>Ajuda novos voluntários a entenderem a ordem do culto</li>
+      <li>Torna o ministério de mídia mais organizado e profissional</li>
+    </ul>
+
+    <!-- 2. Criando os dias de culto -->
+    <h3 class="text-2xl font-semibold text-orange-700 mt-4">2. Criando os dias de culto no Holyrics</h3>
+
+    <p class="text-gray-700">
+      O primeiro passo é cadastrar os dias fixos de culto da igreja.
+    </p>
+
+    <ol class="list-decimal pl-6 text-gray-700">
+      <li>Abra o Holyrics</li>
+      <li>Acesse o menu <strong>Novo</strong></li>
+      <li>Clique em <strong>Culto</strong></li>
+      <li>Defina o nome do culto (Ex: Culto de Domingo à Noite)</li>
+      <li>Escolha a data e o horário</li>
+    </ol>
+    <p class="text-gray-700">
+      🔸 Dica: use nomes padronizados para todos os cultos, isso facilita a organização visual.
+    </p>
+
+    <!-- 3. Organização semanal -->
+    <h3 class="text-2xl font-semibold text-orange-700 mt-4">3. Organizando cultos semanais e especiais</h3>
+
+    <p class="text-gray-700">
+      Dentro do Holyrics, você pode separar cultos fixos e eventos especiais, como vigílias,
+      congressos e cultos jovens.
+    </p>
+
+    <ul class="list-disc pl-6 text-gray-700">
+      <li><strong>Cultos fixos:</strong> Domingo, quarta, sábado, EBD</li>
+      <li><strong>Eventos especiais:</strong> Conferências, campanhas, vigílias</li>
+    </ul>
+
+    <p class="text-gray-700">
+      Isso ajuda a equipe a identificar rapidamente qual culto será exibido no dia.
+    </p>
+
+    <!-- 4. Ordem do culto -->
+    <h3 class="text-2xl font-semibold text-orange-700 mt-4">4. Definindo a ordem do culto</h3>
+
+    <p class="text-gray-700">
+      Após criar o evento, organize a ordem dos itens que serão usados no culto.
+    </p>
+
+    <ul class="list-disc pl-6 text-gray-700">
+      <li>Abertura</li>
+      <li>Louvor</li>
+      <li>Leitura bíblica</li>
+      <li>Ofertas</li>
+      <li>Pregação</li>
+      <li>Avisos</li>
+    </ul>
+
+    <p class="text-gray-700">
+      🔸 Use o recurso de arrastar e soltar do Holyrics para ajustar a ordem rapidamente.
+    </p>
+
+    <!-- 5. Padronização -->
+    <h3 class="text-2xl font-semibold text-orange-700 mt-4">5. Padronizando cores e estilos</h3>
+
+    <p class="text-gray-700">
+      Padronizar os estilos de letras, cores e fundos evita distrações e melhora a leitura
+      para toda a igreja.
+    </p>
+
+    <ul class="list-disc pl-6 text-gray-700">
+      <li>Use sempre o mesmo tamanho de fonte</li>
+      <li>Prefira fundos escuros com letras claras</li>
+      <li>Evite muitas cores diferentes no mesmo culto</li>
+    </ul>
+
+    <!-- 6. Salvando modelos -->
+    <h3 class="text-2xl font-semibold text-orange-700 mt-4">6. Criando modelos de culto</h3>
+
+    <p class="text-gray-700">
+      Uma ótima prática é criar um modelo padrão de culto.
+    </p>
+
+    <p class="text-gray-700">
+      Assim, toda semana você só precisa duplicar o culto, trocar as músicas e ajustar a pregação,
+      economizando muito tempo.
+    </p>
+
+    <!-- Conclusão -->
+    <h3 class="text-2xl font-semibold text-orange-700 mt-6">Conclusão</h3>
+
+    <p class="text-gray-700">
+      Organizar os dias dos cultos no Holyrics é um passo fundamental para melhorar a qualidade
+      da projeção e facilitar o trabalho da equipe de mídia. Com uma agenda bem estruturada,
+      modelos prontos e padronização visual, sua igreja ganha mais organização e profissionalismo.
+    </p>
+
+    <p class="text-gray-700">
+      Coloque essas dicas em prática e transforme a forma como sua igreja utiliza o Holyrics.
+    </p>
+
+  </div>
+</section>
+
+  </main>
+<!-- Bloco de Anúncio Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1516962679050110"
+     crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle"
+     style="display:block; margin: 20px auto;"
+     data-ad-client="ca-pub-1516962679050110"
+     data-ad-slot="9102824774"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  </html>
+
+    <style>
+      :root{
+        --bg:#fbefe5;
+        --card:#ffffff;
+        --accent:#c64a00;
+        --text:#2b2b2b;
+        --maxw:760px;
+      }
+      
+      html,body{height:100%;margin:0;font-family:Inter, Roboto, "Helvetica Neue", Arial, sans-serif;color:var(--text);background:var(--bg)}
+      .page-wrapper{display:flex;justify-content:center;padding:48px 24px}
+      .artigo-container{max-width:var(--maxw);width:100%;}
+
+      .card-titulo{background:var(--card);padding:18px;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-bottom:28px}
+      .card-inner{display:flex;align-items:center;gap:14px;justify-content:center}
+      .card-icone{font-size:28px}
+      .card-titulo h1{color:var(--accent);font-size:26px;margin:0;font-weight:700;text-align:center}
+
+      .titulo-card h1{font-size:22px;margin:6px 0 18px;text-align:left;color:var(--accent)}
+      .artigo-body p{line-height:1.8;font-size:16px;margin:14px 0;color:var(--text)}
+      .artigo-body h3{color:var(--accent);margin-top:18px}
+      .artigo-fig{margin:18px 0;text-align:center}
+      .artigo-fig img{max-width:100%;height:auto;border-radius:6px;display:block;margin:0 auto}
+      .artigo-fig figcaption{font-size:13px;color:#666;margin-top:8px}
+      ul{margin:12px 0 22px 20px}
+      li{margin:8px 0}
+
+      @media (max-width:520px){.page-wrapper{padding:28px 12px}.card-titulo h1{font-size:20px}}
+    </style>
+
+  </body>
+</html>
+
+
+    <style>
+      :root{
+        --bg:#fbefe5;
+        --card:#ffffff;
+        --accent:#c64a00;
+        --text:#2b2b2b;
+        --maxw:760px;
+      }
+      html,body{height:100%;margin:0;font-family:Inter, Roboto, "Helvetica Neue", Arial, sans-serif;color:var(--text);background:var(--bg)}
+      .page-wrapper{display:flex;justify-content:center;padding:48px 24px}
+      .artigo-container{max-width:var(--maxw);width:100%;}
+
+      .card-titulo{background:var(--card);padding:18px;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-bottom:28px}
+      .card-inner{display:flex;align-items:center;gap:14px;justify-content:center}
+      .card-icone{font-size:28px}
+      .card-titulo h1{color:var(--accent);font-size:26px;margin:0;font-weight:700;text-align:center}
+
+      .titulo-card h1{font-size:22px;margin:6px 0 18px;text-align:left;color:var(--accent)}
+      .artigo-body p{line-height:1.8;font-size:16px;margin:14px 0;color:var(--text)}
+      .artigo-body h3{color:var(--accent);margin-top:18px}
+      .artigo-fig{margin:18px 0;text-align:center}
+      .artigo-fig img{max-width:100%;height:auto;border-radius:6px;display:block;margin:0 auto}
+      .artigo-fig figcaption{font-size:13px;color:#666;margin-top:8px}
+      ul{margin:12px 0 22px 20px}
+      li{margin:8px 0}
+
+      @media (max-width:520px){.page-wrapper{padding:28px 12px}.card-titulo h1{font-size:20px}}
+    </style>
+
+  </body>
+</html>
+
+
+    <style>
+      :root{
+        --bg:#fbefe5;
+        --card:#ffffff;
+        --accent:#c64a00;
+        --text:#2b2b2b;
+        --maxw:760px;
+      }
+      html,body{height:100%;margin:0;font-family:Inter, Roboto, "Helvetica Neue", Arial, sans-serif;color:var(--text);background:var(--bg)}
+      .page-wrapper{display:flex;justify-content:center;padding:48px 24px}
+      .artigo-container{max-width:var(--maxw);width:100%;}
+
+      .card-titulo{background:var(--card);padding:18px;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-bottom:28px}
+      .card-inner{display:flex;align-items:center;gap:14px;justify-content:center}
+      .card-icone{font-size:28px}
+      .card-titulo h1{color:var(--accent);font-size:26px;margin:0;font-weight:700;text-align:center}
+
+      .titulo-card h1{font-size:22px;margin:6px 0 18px;text-align:left;color:var(--accent)}
+      .artigo-body p{line-height:1.8;font-size:16px;margin:14px 0;color:var(--text)}
+      .artigo-body h3{color:var(--accent);margin-top:18px}
+      .artigo-fig{margin:18px 0;text-align:center}
+      .artigo-fig img{max-width:100%;height:auto;border-radius:6px;display:block;margin:0 auto}
+      .artigo-fig figcaption{font-size:13px;color:#666;margin-top:8px}
+      ul{margin:12px 0 22px 20px}
+      li{margin:8px 0}
+
+      @media (max-width:520px){.page-wrapper{padding:28px 12px}.card-titulo h1{font-size:20px}}
+    </style>
+
+  </body>
+</html>
+<!-- DICAS DO HOLYRICS -->
+<section id="dicas-holyrics" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-center text-orange-600">
+      Dicas do Holyrics
+    </h2>
+
+    <p class="text-center text-gray-600 mt-3 mb-10">
+      Tutoriais práticos para ajudar você a usar melhor o Holyrics nos cultos
+    </p>
+
+   <!-- BANNER DA DICA -->
+<div class="max-w-4xl mx-auto">
+  <div class="relative overflow-hidden rounded-xl shadow-lg">
+    <img
+      src="https://github.com/Projetoholyrics/Projetoholyrics.github.io/blob/main/ChatGPT%20Image%2022%20de%20dez.%20de%202025,%2021_01_25.png?raw=true"
+      alt="Como mudar o layout do Holyrics"
+      class="w-full h-auto object-cover">
+  </div>
+</div>
+      </div>
+
+    </div>
+
+    <!-- DESCRIÇÃO DA DICA -->
+    <div class="max-w-3xl mx-auto mt-8 text-center">
+      <h3 class="text-xl font-semibold mb-3">
+        Como Organizar os Seus vídeos no VLC PLAYER. 
+      </h3>
+
+      <p class="text-gray-600">
+        Nesta dica você vai aprender, passo a passo, como organizar 
+        de forma simples e facil os seus videos no VLC PLAYER, para estar 
+        passando no culto da sua igreja. Montar uma playlist dos videos a serem
+        passados e ao mesmo tempo ter uma lista de videos bem organizada. 
+      </p>
+    </div>
+  <figure class="artigo-fig">
+  <iframe 
+    width="100%" 
+    height="315"
+    src="https://www.youtube.com/embed/dy1iUorSLyY"
+    title="Novos temas animados para projeção"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  <figcaption>
+    Video completo de como organizar os vidos no VLC PLAYER
+  </figcaption>
+</figure>
+
+  </div>
+</section>
+
+<!-- Recursos para Louvor e Culto -->
+<section id="recursos" class="py-20 bg-orange-50 px-6 text-left">
+  <h2 class="text-3xl font-bold text-orange-700 mb-8">
+    🎵 Recursos para Louvor e Culto
+  </h2>
+
+  <p class="text-gray-700 mb-8">
+    Aqui você encontra materiais prontos para usar na sua igreja: temas animados, loops,
+    fundos, slides, papéis de parede e muito mais para melhorar sua projeção e visual do culto.
+  </p>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Recurso 1 -->
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold text-orange-700 mb-3">📦 Temas Animados</h3>
+      <p class="text-gray-700 mb-4">
+        Baixe temas animados prontos para usar no Holyrics e PowerPoint.
+      </p>
+      <a href="#backgrounds" class="text-orange-600 font-semibold hover:underline">
+        Baixar temas →
       </a>
     </div>
 
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h3 class="text-xl font-bold text-orange-700 mb-3">Downloads</h3>
-      <p class="text-gray-600 mb-4">Baixe o Holyrics e packs de letras organizados.</p>
-      <a href="conteudos/download.html" class="text-orange-600 font-semibold hover:underline">
-        Baixar →
+    <!-- Recurso 2 -->
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold text-orange-700 mb-3">🎨 Backgrounds e Fundos</h3>
+      <p class="text-gray-700 mb-4">
+        Pacotes de backgrounds estáticos e animados para projeção.
+      </p>
+      <a href="#backgrounds" class="text-orange-600 font-semibold hover:underline">
+        Ver pacotes →
       </a>
     </div>
 
-    <div class="bg-white p-6 rounded-xl shadow">
-      <h3 class="text-xl font-bold text-orange-700 mb-3">Aulas</h3>
-      <p class="text-gray-600 mb-4">Tutoriais e vídeos para aprender do básico ao avançado.</p>
-      <a href="conteudos/aulas.html" class="text-orange-600 font-semibold hover:underline">
-        Assistir →
+    <!-- Recurso 3 -->
+    <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold text-orange-700 mb-3">📊 Slides prontos</h3>
+      <p class="text-gray-700 mb-4">
+        Slides de louvor, temas especiais e apresentações prontas.
+      </p>
+      <a href="#slides" class="text-orange-600 font-semibold hover:underline">
+        Em breve →
       </a>
     </div>
 
   </div>
 </section>
 
-<!-- ================= RODAPÉ ================= -->
-<footer class="bg-white shadow py-6 text-center">
-  <p class="text-gray-600">
-    © Projeto Holyrics — Todos os direitos reservados
-  </p>
-</footer>
+  
 
-<!-- ================= SCRIPT MENU MOBILE ================= -->
+
+  <!-- Apresentação -->
+  <section id="apresentacao" class="py-20 bg-orange-50 px-6 text-center">
+    <h2 class="text-3xl font-semibold text-orange-700 mb-10">Apresentação do Site</h2>
+    <p class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+      Seja bem-vindo ao <strong>Projeto Holyrics</strong>! Este site foi criado para ajudar ministérios e igrejas
+      a aprender e dominar o Holyrics de forma simples, rápida e eficiente.
+    </p>
+  </section>
+
+  
+  <!-- Redes Sociais -->
+  <section id="redes" class="py-20 bg-orange-50 px-6 text-center">
+    <h2 class="text-3xl font-semibold text-orange-700 mb-10">🌐 Redes do Projeto Holyrics</h2>
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6 max-w-3xl mx-auto">
+
+      <a href="https://chat.whatsapp.com/C3RhvCOREhHIfZOlPRQTKu" target="_blank"
+         class="w-full md:w-auto bg-green-500 text-white px-8 py-3 rounded-xl text-lg font-semibold shadow hover:bg-green-600 transition">
+        🔗 Grupo do WhatsApp
+      </a>
+
+      <a href="https://www.instagram.com/holyrics_projeto/" target="_blank"
+         class="w-full md:w-auto bg-pink-500 text-white px-8 py-3 rounded-xl text-lg font-semibold shadow hover:bg-pink-600 transition">
+        📸 Instagram Oficial
+      </a>
+
+      <a href="https://www.youtube.com/@projetoholyrics7226" target="_blank"
+         class="w-full md:w-auto bg-red-600 text-white px-8 py-3 rounded-xl text-lg font-semibold shadow hover:bg-red-700 transition">
+        ▶️ Canal no YouTube
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Script do Menu -->
+  <script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+<!-- Banner de Cookies - Completo com ACEITAR e RECUSAR -->
+<style>
+  #cookie-box {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(200px);
+    width: 90%;
+    max-width: 450px;
+    background: rgba(255, 102, 0, 0.95); /* laranja */
+    color: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    z-index: 99999;
+    opacity: 0;
+    transition: all .5s ease;
+  }
+
+  #cookie-box.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  #cookie-buttons {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+  }
+
+  #cookie-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background .3s;
+  }
+
+  /* Botão aceitar */
+  #acceptCookies {
+    background: #ff8300; 
+  }
+  #acceptCookies:hover {
+    background: #e56f00;
+  }
+
+  /* Botão recusar */
+  #declineCookies {
+    background: #444;
+  }
+  #declineCookies:hover {
+    background: #222;
+  }
+</style>
+
+<div id="cookie-box">
+  Este site utiliza cookies para melhorar sua experiência. 
+  Você pode aceitar ou recusar o uso de cookies.
+  
+  <div id="cookie-buttons">
+    <button id="acceptCookies">Aceitar</button>
+    <button id="declineCookies">Não aceitar</button>
+  </div>
+</div>
+
 <script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
+  window.addEventListener("load", function(){
+    if(!localStorage.getItem("cookieConsent")){
+      const box = document.getElementById("cookie-box");
+      setTimeout(() => box.classList.add("show"), 300);
+    }
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('hidden');
+    // Aceitar cookies
+    document.getElementById("acceptCookies").onclick = function() {
+      localStorage.setItem("cookieConsent", "accepted");
+      document.getElementById("cookie-box").classList.remove("show");
+      // Aqui você pode ativar scripts como Analytics, Ads, etc.
+    };
+
+    // Recusar cookies
+    document.getElementById("declineCookies").onclick = function() {
+      localStorage.setItem("cookieConsent", "declined");
+      document.getElementById("cookie-box").classList.remove("show");
+      // Bloqueia cookies e scripts externos (Google exige isso quando recusa)
+      console.log("Cookies recusados pelo usuário.");
+    };
   });
 </script>
+
 
 </body>
 </html>
