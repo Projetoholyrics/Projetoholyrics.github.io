@@ -1,0 +1,122 @@
+﻿:root {
+  color-scheme: light;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #f8fafc;
+  color: #1f2937;
+}
+#cookie-box {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(200px);
+  width: 90%;
+  max-width: 450px;
+  background: rgba(255, 102, 0, 0.95);
+  color: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  z-index: 99999;
+  opacity: 0;
+  transition: all .4s ease;
+}
+#cookie-box.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+#cookie-buttons {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+}
+#cookie-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background .3s ease;
+}
+#acceptCookies {
+  background: #ff8300;
+}
+#acceptCookies:hover {
+  background: #e56f00;
+}
+#declineCookies {
+  background: #444;
+}
+#declineCookies:hover {
+  background: #222;
+}
+.artigo-fig img,
+.artigo-fig iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+.page-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.artigo-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.card-titulo {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.75rem;
+}
+.card-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+.card-icone {
+  font-size: 2rem;
+}
+.titulo-card h1 {
+  font-size: 1.75rem;
+  margin: 0.5rem 0 1rem;
+  color: #c2410c;
+}
+.artigo-body p,
+.artigo-body ul,
+.artigo-body ol {
+  line-height: 1.9;
+  color: #334155;
+}
+.artigo-body h2,
+.artigo-body h3 {
+  color: #c2410c;
+}
+.artigo-fig figcaption {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-top: 0.75rem;
+}
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding: 16px;
+  }
+  .card-titulo h1 {
+    font-size: 1.5rem;
+  }
+}
