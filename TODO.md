@@ -16,4 +16,7 @@
 - [x] 12. Atualizar `artigo-atalhos-biblia-holyrics.html` (header/footer completos)
 - [x] 13. Atualizar `artigo-Temas-animados-holyrics.html` (header/footer completos)
 - [x] 14. Verificar todos os links entre páginas
+- [x] 15. Reorganizar imagens na pasta `assets/images/` com subpastas
+- [x] 16. Atualizar caminhos de imagem em todos os arquivos HTML para caminhos locais
+- [x] 17. Verificar que nenhum caminho de imagem está quebrado
 
