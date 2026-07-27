@@ -1,0 +1,9 @@
+# robots.txt for Projeto Holyrics
+# https://Projetoholyrics.github.io
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://Projetoholyrics.github.io/sitemap.xml
+
